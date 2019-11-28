@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+  ],
+  // pathPrefix: `http://localhost/gatsby-wordpress`,
+  //assetPrefix: "/gatsby-wordpress/app/themes/base_theme/framework/public/"
 }
